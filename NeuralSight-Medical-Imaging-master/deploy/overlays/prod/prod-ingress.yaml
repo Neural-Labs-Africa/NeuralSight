@@ -1,0 +1,33 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: vers-http
+  namespace: neurallabs
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`prod.api.neurallabs.africa`)
+      services:
+        - name: vers-svc
+          port: 80
+      middlewares:
+        - name: https-redirect
+          namespace: default
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: vers-https
+  namespace: neurallabs
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`prod.api.neurallabs.africa`)
+      services:
+        - name: vers-svc
+          port: 80

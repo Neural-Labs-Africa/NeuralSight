@@ -1,0 +1,7 @@
+resources:
+  - deployment.yaml
+  - ingress.yaml
+  - service.yaml
+
+commonLabels:
+  owner: eggy

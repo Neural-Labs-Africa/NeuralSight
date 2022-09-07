@@ -1,0 +1,8 @@
+bases:
+  - "../../base"
+  
+commonLabels:
+  env: dev
+
+patches:
+  - dev-ingress.yaml

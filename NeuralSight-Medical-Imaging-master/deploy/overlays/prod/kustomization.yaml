@@ -1,0 +1,8 @@
+bases:
+  - "../../base"
+  
+commonLabels:
+  env: prod
+
+patches:
+  - prod-ingress.yaml
