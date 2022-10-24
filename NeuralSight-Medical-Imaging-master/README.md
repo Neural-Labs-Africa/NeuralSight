@@ -1,4 +1,6 @@
-# Nsight
+# NeuralSight
+NeuralSight is an intelligent tool that is able to localize, qualify the lesions and score in under a minute, enabling clinicians to classify patients into priority categories: high, medium, low and none. The ability to quantify the percentage of the lung affected due to lesions enables objective monitoring of disease progression.
+Using Deep Learning and Computer Vision NeuralSight technology screens x-rays for radiologists and hospitals in real time to identify over 13 respiratory diseases such as Pneumonia, TB, and lung cancer.  
 
 Revolutinizing health care using deeplearning.
 
